@@ -17,7 +17,7 @@ public class JsonFunction implements Function<Map<String, String>, Map<String, S
         final String KEY_MESSAGE = "message";
         if (data == null || !data.containsKey(KEY_MESSAGE)) {
             logger.info("Json object has to have 'message' key");
-            return Map.of("error", "Field message can not be null or empty");
+            return Map.of("error", "Field message can not be null or empty!!!! !! !");
         }
         StringBuilder sb = new StringBuilder();
         IntStream.range(0, data.get(KEY_MESSAGE).length())
